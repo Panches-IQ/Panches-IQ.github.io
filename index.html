@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+    <title>Pavel Daleuski Presentation</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/magnific-popup/magnific-popup.css">
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head> 
+
+<body data-spy="scroll">
+    
+   
+    <!-- ******HEADER****** --> 
+    <header id="header" class="header">  
+        <div class="container">            
+            <h1 class="logo pull-left">
+                <a class="scrollto" href="#promo">
+                    <span class="logo-title"> Save Princess Game</span>
+                </a>
+            </h1><!--//logo-->              
+            <nav id="main-nav" class="main-nav navbar-right" role="navigation">
+                <div class="navbar-header">
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button><!--//nav-toggle-->
+                </div><!--//navbar-header-->            
+                <div class="navbar-collapse collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active nav-item sr-only"><a class="scrollto" href="#promo">Home</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#about">About</a></li>
+                        <li class="nav-item"><a class="scrollto" href="#features">Technologies</a></li>
+                        
+                        <li class="nav-item"><a class="scrollto" href="#portfolio">Photo</a></li>                        
+                        <li class="nav-item last"><a class="scrollto" href="#contact">Contact</a></li>
+                    </ul><!--//nav-->
+                </div><!--//navabr-collapse-->
+            </nav><!--//main-nav-->
+        </div>
+    </header><!--//header-->
+    
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+        <div class="container text-center">
+            <h2 class="title">Save<span class="highlight">Princess</span></h2>
+            <p class="intro">A free mobile-friendly game designed to show abilities of canvas and PointJS engine </p>
+            <div class="btns">
+                <a class="btn btn-cta-secondary" href="./game/game.html" target="_blank">Demo</a>
+                <a class="btn btn-cta-primary" href="./game/game.rar" target="_blank">Download</a>
+            </div>
+            <ul class="meta list-inline">
+                <li><a href="https://github.com/Panches-IQ/Panches-IQ.github.io" target="_blank">View on GitHub</a></li>
+                <li><a href="https://github.com/Panches-IQ/Panches-IQ.github.io" target="_blank">Full Documentation</a></li>
+                <li>Created by: <a href="https://github.com/Panches-IQ/Panches-IQ.github.io" target="_blank"> Daleuski Pavel</a>, Belarus, Minsk 2017</li>
+            </ul><!--//meta-->
+        </div><!--//container-->
+    </section><!--//promo-->
+    
+    <!-- ******ABOUT****** --> 
+    <section id="about" class="about section">
+        <div class="container">
+            <h2 class="title text-center"> Задача игры</h2>
+            <p class="intro text-center"> насобирать более 12 алмазов и убить босса, чтобы завоевать сердце принцессы.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <img src="images/level_01.png" alt="">
+                </div>
+                <div class="col-sm-6"><img src="images/level_04.png" alt=""></div>
+            </div>
+            <div class="row">
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-wrench" aria-hidden="true"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title"> Управление: </h3>
+                        <ul>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> клавиша "S" -> начать игру</li>
+                            <li><i class="fa fa-check-square-o" acria-hidden="true"></i>клавиши стрелки, "SPACE" и "WASD" -> прыгать бегать лазить </li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> клавиша "CTRL" -> бросить бомбу</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> клавиша "X" -> заложить бомбу (взорвётся через ~3 секунды)</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> клавиша "P" -> пауза</li>
+                            <li><i class="fa fa-check-square-o" aria-hidden="true"></i> клавиши "K" и "L" -> посмотреть карту уровня, доступно только в начале и в конце уровня</li>
+                            <!--<li><i class="fa fa-check-square-o" aria-hidden="true"></i> </li> -->
+                        </ul>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-spinner" aria-hidden="true"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title"> </h3>
+                        <p>Бросить бомбу можно и в прыжке, а заложить - только когда стоишь или бежишь на земле, но не в воздухе.
+Подорваться можно на своей бомбе, поэтому после закладки бомбы нужно успеть убежать.
+Количество бомб во всех уровнях не ограничено (после выстрелов массив бомб очищается в цикле начиная с последнего элемента).
+В драке с боссом количество бомб ограничено до 50 шт.
+Врагов можно уничтожать просто прыгнув на них. </p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-crosshairs"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title"></h3>
+                        <p>Если прикоснулся к врагу - минус 30 очков здоровья и 1.5 секунды бессмертия.
+После уничтожения на их месте появляется монетка, можно собирать - прибавляет +5 очков здоровья и +1 алмаз.
+
+Если съел фрукт - плюс 20 очков здоровья.
+Если съел мухомор - минус 30 очков здоровья.
+Если попал в воду - погибаешь независимо от уровня здоровья.
+Если прикоснулся к боссу - минус 30 очков здоровья. </p>
+                    </div><!--//content-->
+                </div><!--//item-->  
+                </div>         
+                <div class="clearfix visible-md"></div>    
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title">Уровень 1</h3>
+                        <p> Задача - насобирать алмазы и убить всех друзей босса.
+В конце светофор на второй уровень. 
+Если враги ещё не убиты, но собрано более 12 алмазов, то загорится желтый свет, но это ничего не значит и является чисто информативным событием.
+Чтобы перейти на следующий уровень нужно подойти к зелёному светофору. Чтобы загорелся зелёный нужно убить всех врагов.
+Перейти на следующий уровень можно и с количеством алмазов </p>
+                    </div><!--//content-->
+                </div><!--//item-->                
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                        <i class="fa fa-code"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title"> Уровень 2</h3>
+                        <p>Задача - убить босса. В уровне нет разбросанных алмазов. Если на предыдушем уровне собрано недостаточное количество алмазов, то можно убить друзей босса и собрать их деньги, но сделать это нужно до вызова босса на дуэль. 
+Босс мирно сидит около дома и не знает что у него есть соперник. 
+Вызов босса на дуэль осуществляется ударом в гонг (просто стать на место гонга). После удара в гонг все друзья босса исчезают, а количество бомб ограничивается до 50 шт.
+Босс преследует главного героя по его местоположению (если главный герой высоко - босс идёт, если на уровне босса - бежит). Босса можно убить или бомбами, или прыжками на него.</p>
+                    </div><!--//content-->
+                </div><!--//item-->
+                <div class="item col-md-4 col-sm-6 col-xs-12">
+                    <div class="icon-holder">
+                       <i class="fa fa-trophy" aria-hidden="true"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="sub-title"> GAME OVER</h3>
+                        <p>После победы над боссом из дома выходит принцесса (либо грустная, либо радостная - в зависимости от количества собранных алмазов) и идёт к месту схватки. 
+Там же она выносит своё решение.
+<br>
+Игра заканчивается очередным ударом в гонг.</p>
+                    </div><!--//content-->
+                </div><!--//item-->               
+            </div><!--//row-->            
+        </div><!--//container-->
+    </section><!--//about-->
+    
+    <!-- ******FEATURES****** --> 
+    <section id="features" class="features section">
+        <div class="container text-center">
+            <h2 class="title">Technologies</h2>
+            <ul class="feature-list list-unstyled">
+            <li><i class="fa fa-check"></i> Java Script</li>
+                <li><i class="fa fa-check"></i> HTML5 + CSS3</li>
+                <li><i class="fa fa-check"></i> Built on <a href="http://pointjs.ru/" target="_blank">PointJS</a></li>
+                <li><i class="fa fa-check"></i> Canvas</li>
+               
+            </ul>
+        </div><!--//container-->
+    </section><!--//features-->
+
+<section id="portfolio" class="s_portfolio"> <a name="portfolio"></a>
+<div class="section_header">
+<h2> Game Photos </h2>
+</div>
+<div class="section_content">
+    <div class="container">
+        <div class="row">
+    <div id="portfolio_grid">
+    <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/level_01.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/level_01.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+    <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/level_02.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/level_02.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+   <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/level_01_bomb.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/level_01_bomb.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+   
+
+   <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/level_03.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/level_03.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+    <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/level_04.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/level_04.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+   <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/level_05.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/level_05.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+    <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/princess.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/princess.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+   <div class="mix col-md-4 col-sm-6 col-xs-6 portfolio_item category-1" >
+        <img src="images/level_01.png" alt="Alt">
+        <div class="port_item_cont">
+            <a href="#" class="popup_content"> Посмотреть </a>  
+        </div>
+        <div class="hidden">
+            <div class="portf_descr">
+            <div class="modal-box-content">
+            <button class="mfp-close" type="button" title="Close(Esc)">x</button>
+            <img src="images/level_01.png" alt="Alt">
+        </div> 
+        </div>
+        </div>
+    </div>
+        </div>
+        </div>
+    </div>
+    
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+    <!-- ******CONTACT****** --> 
+    <section id="contact" class="contact section has-pattern">
+        <div class="container">
+            <div class="contact-inner">
+                <h2 class="title  text-center">Contact</h2>
+                <p class="intro  text-center">Hello, my name is Pavel Daleuski, I'm 34,  live in Minsk. <br /> I'm a Front-end developer.<br/> Please don't hesitate to contact me any time.</p>
+                <div class="author-message">                      
+                    <div class="profile">
+                        <img class="img-responsive" src="images/pavel.jpg" alt="" />
+                    </div><!--//profile-->
+                    <div class="speech-bubble">
+                        <h3 class="sub-title">Skills</h3>
+                        <p> <ul>
+                            <li> JS ES6;</li>
+                            <li>HTML5+CSS3;</li>
+                            <li>Canvas; </li>
+                            <li>Git;</li>
+                            <li>jQuery, AngularJS;</li>
+                            <li>functional programming, prototype, OOP etc.,</li>
+                            <li>PhotoShop, picture formats;</li>
+                            <li>DevTools, Agile: Scrum, Kanban, Planning poker.</li>
+                        </ul> <a href="#" target="_blank">pavel.daleuski@yandex.ru</a> 
+                        <p>If you like what I do, you can follow me on facebook and I will keep you informed about my next free game</p>
+                        <div class="source">
+                            <span class="name"><a href="https://www.facebook.com/pavel.daleuski?fref=ts" target="_blank">Pavel Daleuski</a></span>
+                            <br />
+                            <span class="title">Front-end developer</span>
+                        </div><!--//source-->
+                    </div><!--//speech-bubble-->                        
+                </div><!--//author-message-->
+                <div class="clearfix"></div>
+                <div class="info text-center">
+                    <h4 class="sub-title">Get Connected</h4>
+                    <ul class="social-icons list-inline">
+                        
+                        <li><a href="https://www.facebook.com/pavel.daleuski?fref=ts" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                       
+                        <li class="last"><a href="mailto:pavel.daleuski@yandex.ru"><i class="fa fa-envelope"></i></a></li>              
+                    </ul>
+                </div><!--//info-->
+            </div><!--//contact-inner-->
+        </div><!--//container-->
+    </section><!--//contact-->  
+      
+    <!-- ******FOOTER****** --> 
+    <footer class="footer">
+        <div class="container text-center">
+            <small class="copyright"> &copy; 2017 All rights reserved <!--i class="fa fa-heart"></i--> &male; by <a href="http://github.com/panches-iq" target="_blank">Pavel Daleuski</a></small>
+        </div><!--//container-->
+    </footer><!--//footer-->
+     
+    <!-- Javascript -->   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>       
+    <script type="text/javascript" src="assets/plugins/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-migrate-1.2.1.min.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery.easing.1.3.js"></script>   
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>     
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script> 
+    <script type="text/javascript" src="assets/plugins/prism/prism.js">
+    </script>    
+    <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+ <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script> 
+    
+
+
+
+</body>
+</html> 
+

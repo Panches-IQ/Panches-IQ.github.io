@@ -1,0 +1,23 @@
+Game name: "Save the Princess".
+
+This game is the implementation of simple-Mario scenario, i.e. means that we have the main hero and some simple enemies. We can destroy them by throwing grenades. We also can be injured and damaged to death. Our aim is to collect some number of diamonds and not being damaged by enemies to complete the level, and then to kill the Boss.
+The target of the game is to release the Princess from captivety of Boss and make her heart melt. So if we finally kill the boss but we don't have enough diamonds the game will be lost. 
+The game should lasts at least 10 minutes and should consist of 2 levels.
+
+Controls:
+• Arrows or "wasd" - move the Main hero right or left, or jump.
+• "Ctrl" or "X" - throw the Grenade.
+• "P" - pause the Game.
+
+Objects of the game:
+• The "Main hero". Can move x- and y-axis. He moves y-axis by making a jump. Can throw the grenades. Has a health level property which is shown at the top of the screen. Can be damaged by "Enemy", by "Boss Enemy" and by Grenades. Can collect food to rise the health. Can collect the diamonds. He must collect at least 10 diamonds to be accepted by "Princess" in case to win the game. 
+• The "Enemy". Can move x-axis only. When they touch the Main hero, he loses a 10 to 30 points of his health. Can be damaged or killed to death. Then been killed, they disapear from the screen. Then the "Boss Enemy" appears, they disapear too.
+• The "Boss Enemy". The final enemy of the game. Can move x-axis only. Has a health level property which is shouwn at the top of the screen. When he touches the Main hero, he loses up to 50 points of his life. When been killed he dissapears from the screen.
+• The "Princess". The static object, she cannot move any direction. Appears directly after the Boss Enemy has been killed. The Princess decides if the Main hero lose or win the game according to the number of collected diamonds. If the number is 10 or larger she claims "I'm yours forever" and main hero wins the game. Otherwise, she claims "You are a beggar, why did you kill my love?!" and the Main hero loses the game.
+• The "Food". The static object. It disapears when being touched by the Main hero and rises the health of the Main hero by 10 to 50 points.
+• The "Diamond". The static object. It disapears when being touched by the Main hero and rises the quality of collected diamonds by 1.
+• The "Grenade". Moves x- and y-axis. Appears for 3 seconds and then explodes. Can damage all enemies. Can damage the Boss enemy health by 20 to 50 points. Can damage the Main hero health by 20 to 50 points.
+• Game map. Should reply the usual environment. I.e. means it should consist of ground, trees, sky, buildings, separate islands of ground and so on.
+• Game music. There should be some silent background music. Every event, like collect the diamond or explosion of the grenade, should be followed by short appropriate sound.
+
+Technologies to be used: HTML5, Canvas and Javascript.
