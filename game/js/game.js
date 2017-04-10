@@ -128,7 +128,7 @@ game.newLoopFromConstructor('Start', function () {
 		delta += 1.83;
 		gameName.size += 0.4;
 		gameName.draw(); // drawing text
-		gameName.transparent(0.015); // change alpha [0..>..1]
+		gameName.transparent(0.012); // change alpha [0..>..1]
 		if(gameName.getAlpha() == 1) flag = 1;
 		} else {
 			if(key.isPress("S")) {
@@ -901,7 +901,7 @@ game.newLoopFromConstructor('GameLevel_01', function () {
 		}
 		for(let i=0;i<objsBomb.length;i++) {
 			if(objsBomb[i].visible) {
-				if(objsBomb[i].timer == 0 && objsBomb[i].effect > 40) {
+				if(objsBomb[i].timer == 0 && objsBomb[i].effect > 56) {
 					for(let j=0;j<objsEnemies.length;j++) {
 						if(objsBomb[i].isIntersect(objsEnemies[j])) {
 							objsEnemies[j].visible = false;
@@ -1765,7 +1765,7 @@ game.newLoopFromConstructor('GameLevel_02', function() {
 		}
 		for(let i=0;i<objsBomb.length;i++) if(objsBomb[i].visible) {
 			if(objsBomb[i].visible) {
-				if(objsBomb[i].timer == 0 && objsBomb[i].effect > 40) {
+				if(objsBomb[i].timer == 0 && objsBomb[i].effect > 56) {
 					for(let j=0;j<objsEnemies.length;j++) {
 						if(objsBomb[i].isIntersect(objsEnemies[j])) {
 							objsEnemies[j].visible = false;
