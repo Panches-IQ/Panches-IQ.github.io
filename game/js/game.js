@@ -101,7 +101,7 @@ game.newLoopFromConstructor('Start', function () {
 		font: 'Goudy Stout'			
 	}),
 		logoImag = game.newImageObject({
-			file: 'img/logopr.png',
+			file: 'img/logona.png',
 			scale: 1.2,
 			alpha: 0.2
 		}),
