@@ -1785,7 +1785,7 @@ game.newLoopFromConstructor('GameLevel_02', function() {
 						}
 					}
 					if(mainBoss.go.isIntersect(objsBomb[i])) {
-						bossHealth -= 0.15;
+						bossHealth -= 0.32;
 						if(bossHealth <= 0) bossHealth = 0;
 					}					
 				}
