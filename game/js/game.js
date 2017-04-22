@@ -557,13 +557,22 @@ game.newLoopFromConstructor('GameLevel_01', function () {
 		OOP.forArr(str, function(elem, x) {
 		if(elem == 'E' || elem == 'e' || elem == 'M' || elem == 'm' || elem == 'L' || elem == 'l' || elem == 'x') {
 				objsSurf.push(game.newRectObject({
-					x: x * map.width,
+					x: x * map.width + 10,
 					y: y * map.height,
-					w: 32,
-					h: 5,
+					w: 12,
+					h: 4,
 					fillColor: "#4F0060"
 				}));
 			}
+        if(elem == 'a' || elem == 'b' || elem == 'A' || elem == 'B') {
+                objsSurf.push(game.newRectObject({
+                    x: x * map.width + 6,
+                    y: y * map.height,
+                    w: 4,
+                    h: 4,
+                    fillColor: "#4F0060"
+                }));
+            }
 		})
 	}); // DRAW SURFACE MAP
 
@@ -1479,13 +1488,22 @@ game.newLoopFromConstructor('GameLevel_02', function() {
 		OOP.forArr(str, function(elem, x) {
 		if(elem == 'E' || elem == 'e' || elem == 'M' || elem == 'm' || elem == 'L' || elem == 'l' || elem == 'x') {
 				objsSurf.push(game.newRectObject({
-					x: x * map.width,
+					x: x * map.width + 10,
 					y: y * map.height,
-					w: 32,
-					h: 5,
+					w: 12,
+					h: 4,
 					fillColor: "#4F0060"
 				}));
 			}
+        if(elem == 'a' || elem == 'b' || elem == 'A' || elem == 'B') {
+                objsSurf.push(game.newRectObject({
+                    x: x * map.width + 6,
+                    y: y * map.height,
+                    w: 4,
+                    h: 4,
+                    fillColor: "#4F0060"
+                }));
+            }
 		})
 	}); // DRAW SURFACE MAP	
 
@@ -1553,6 +1571,7 @@ game.newLoopFromConstructor('GameLevel_02', function() {
 		OOP.drawArr(objs);
 		//princess.happy.drawReverFrames(0,2);
 		
+		//for(let i=0;i<objsSurf.length;i++) objsSurf[i].draw(); // it's possible not to draw
 		for(let i=0;i<objsFood.length;i++) if(objsFood[i].visible) objsFood[i].draw();
 		for(let i=0;i<objsStair.length;i++) objsStair[i].draw();
 		for(let i=0;i<objsMashrooms.length;i++) objsMashrooms[i].draw();
